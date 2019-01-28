@@ -6,13 +6,12 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/23 18:51:59 by darbib            #+#    #+#             */
-/*   Updated: 2019/01/28 17:18:29 by darbib           ###   ########.fr       */
+/*   Updated: 2019/01/28 17:58:31 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include "get_next_line.h"
-#include <stdio.h>
 
 static int	rd_join_sk(int fd, char **line, char **p_eol)
 {
