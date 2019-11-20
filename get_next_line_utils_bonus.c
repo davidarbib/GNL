@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 17:21:28 by darbib            #+#    #+#             */
-/*   Updated: 2019/11/20 21:07:55 by darbib           ###   ########.fr       */
+/*   Updated: 2019/11/20 21:46:55 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ char	*ft_strjoinfree(char const *s1, char const *s2, char clear)
 
 	len_s1 = ft_strlen(s1);
 	len_s2 = ft_strlen(s2);
-	if (!(s_out = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1))))
+	if (!(s_out = ft_calloc(len_s1 + len_s2 + 1, sizeof(char))))
 		return (NULL);
 	if (len_s1 + 1)
 	{
