@@ -6,16 +6,16 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 17:21:28 by darbib            #+#    #+#             */
-/*   Updated: 2019/11/20 21:46:18 by darbib           ###   ########.fr       */
+/*   Updated: 2019/11/22 13:56:31 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *mem;
-	size_t i;
+	void	*mem;
+	size_t	i;
 
 	if (!count || !size)
 	{
@@ -33,7 +33,7 @@ void	*ft_calloc(size_t count, size_t size)
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (s[i])
 		i++;

@@ -3,8 +3,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-int				get_next_line(int fd, char **line);
-
 int main(int ac, char **av)
 {
 	char	*line;
@@ -13,17 +11,16 @@ int main(int ac, char **av)
 
 	(void)ac;
 	(void)av;
-	//fd = open(av[1], O_RDONLY);
 	//fd = 1;
-	fd = 0;
+	//fd = 0;
+	fd = open(av[1], O_RDONLY);
 	line = NULL;
 	while ((gnl = get_next_line(fd, &line)) > 0)
 	{
-		printf("%s\n", line);
+		printf("ret = %d  %s\n", gnl, line);
 		free(line);
 	}
-	printf("%s\n", line);
+	printf("ret = %d, %s\n", gnl, line);
 	free(line);
 	close(fd);
-	//while (1) {};
 }
